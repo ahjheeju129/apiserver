@@ -1,4 +1,4 @@
-name: djnago
+name: django
 on:
   push:
     branches: ["main"]
@@ -30,7 +30,7 @@ jobs:
       - name: build and release to DockerHub
         env:
           NAME: ${{ secrets.DOCKERHUB_USERNAME}}
-          REPO: djangoaipserver
+          REPO: djangoapiserver
         run: |
           docker build -t $REPO .
           docker tag $REPO:latest $NAME/$REPO:latest
