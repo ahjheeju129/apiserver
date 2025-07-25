@@ -2,7 +2,7 @@ name: djnago
 on:
   push:
     branches: ["main"]
-  pull_reuqest:
+  pull_reuqests:
     branches: ["main"]
 jobs:
   build:
